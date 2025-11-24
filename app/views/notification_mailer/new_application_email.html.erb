@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>New Applicant: <%= @applicant_name %></h1>
+    <p>
+      You have received a new application for the position 
+      <strong><%= @job.title %></strong>.
+    </p>
+    
+    <p><strong>Applicant Email:</strong> <%= @applicant.email %></p>
+    
+    <% if @application.cover_letter.present? %>
+      <h3>Cover Letter:</h3>
+      <p><%= @application.cover_letter %></p>
+    <% end %>
+
+    <p>Login to your dashboard to review the application.</p>
+  </body>
+</html>
