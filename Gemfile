@@ -15,7 +15,7 @@ gem "jwt"
 
 # Search
 gem "searchkick" # Elasticsearch wrapper
-gem "elasticsearch", "~> 7.17"
+gem "elasticsearch", "~> 9.2"
 
 # Storage & Images
 gem "image_processing", "~> 1.2"
