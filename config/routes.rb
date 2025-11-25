@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # Websockets
+  root to: "home#index"
   mount ActionCable.server => '/cable'
 
   namespace :api do
